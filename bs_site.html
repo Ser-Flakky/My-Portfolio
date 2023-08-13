@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <!-- Mets Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/project_SOLUTION.css">
+        
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/4ccc36d0a2.js" crossorigin="anonymous"></script>
+        
+        <title>Startup Projekt</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbarMenu" data-bs-offset="">
+        <!-- Navigation: Navbar -->
+        <nav id="navbarMenu" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-2 box-shadow"> <!-- "box-shadow" is not pre-defined: we create it custom in css --> 
+            <a class="navbar-brand ms-3" href="#header">Photastic
+            </a><!-- the link "#header" means that wnwever you clic on "Photastic" in the site, it redirects back to the main page -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!-- hamburger button to expand vertically the navbar-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-item nav-link"  href="#features">Features</a>
+                    <a class="nav-item nav-link" href="#pricing">Preise</a>
+                    <a class="nav-item nav-link" href="#testimonials">Kundenstimmen</a>
+                    <a class="nav-item nav-link" href="#contact">Kontakt</a>
+                </div>
+                <form class="d-flex me-md-3" role="search">
+                    <input class="form-control me-sm-2" type="search" placeholder="Suche nach...">
+                    <button class="btn btn-outline-primary" type="submit">Suchen</button>
+                </form>
+            </div>
+        </nav>
+        <!-- Ende Navigation -->
+        
+        <!-- Header -->
+        <div class="container-fluid" id="header"><!--basically the jumbotron is just a container inside another. For the image, we use the usual CSS stuff -->
+            <div class="container text-center">
+                <h1 class="display-2">Photastic</h1>
+                <p>Die Photo App des 21. Jahrhunderts</p>
+                <a class="btn btn-primary" role="button" type="button" href="#pricing">Jetzt testen</a>
+            </div>
+        </div>
+        <!-- Ende Header -->
+        
+        <!-- Features -->
+        <div class="bg-light" id="features">
+            <!-- Content Container -->
+            <div class="container text-center py-5"> <!-- py means padding in the y-axis -->
+                <h3 class="display-4">Unendliche Mögichkeiten</h3>
+                <h6>Dank unserer eingebauten Features. Verfügbar in allen Versionen.</h6>
+                
+                
+                
+                <div class="row mt-5 mb-1">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="startup-images/photo.jpeg" class="img-fluid img-thumbnail img-feature mx-auto d-block mb-4 box-shadow" alt="feature-photo"><!-- "img feature" is a custom class -->
+                        <h4 class="mb-3">Aufnehmen</h4>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                        <a href="#" class="btn btn-outline-primary mb-5">Zum Artikel</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="startup-images/edit.jpeg" class="img-fluid img-thumbnail img-feature mx-auto d-block mb-4 box-shadow" alt="feature-photo">
+                        <h4 class="mb-3">Bearbeiten</h4>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                        <a href="#" class="btn btn-outline-primary mb-5">Zum Artikel</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="startup-images/cloud.jpeg" class="img-fluid img-thumbnail img-feature mx-auto d-block mb-4 box-shadow" alt="feature-photo">
+                        <h4 class="mb-3">Speichern</h4>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                        <a href="#" class="btn btn-outline-primary mb-5">Zum Artikel</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="startup-images/share.jpeg" class="img-fluid img-thumbnail img-feature mx-auto d-block mb-4 box-shadow" alt="feature-photo">
+                        <h4 class="mb-3">Teilen</h4>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                        <a href="#" class="btn btn-outline-primary mb-5">Zum Artikel</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Ende Container -->
+        </div>
+        <!-- Ende Features -->
+        
+        <!-- Pricing -->
+        <div id="pricing">
+            <!-- Content Container -->
+            <div class="container text-center py-5">
+                <h3 class="display-4 mb-5">Unsere Versionen</h3>
+                <div class="row mb-4">
+                    <div class="col-md-4 col-sm-6"> <!-- in the original solution it states a minimum width so that the cards go to the next line -->
+                        <div class="card box-shadow mb-2">
+                            <div class="card-header bg-light">
+                                <h4 class="my-0">Free</h4>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">0&euro; <small class="text-muted">/ Monat</small></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Alle Filter</li>
+                                    <li>2 GB Cloud-Speicher</li>
+                                    <li>1 Social Media Account</li>
+                                    <li>E-Mail Support</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-primary">Kostenlos anmelden</a>
+                            </div>
+                            <div class="card-footer text-muted">Kostenlos. Für immer!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card box-shadow mb-2">
+                            <div class="card-header bg-primary text-white">
+                                <h4 class="my-0">Basic</h4>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">4,99&euro; <small class="text-muted">/ Monat</small></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Alle Filter &amp; Farben</li>
+                                    <li>10 GB Cloud-Speicher</li>
+                                    <li>3 Social Media Account </li>
+                                    <li>Bevorzugten E-Mail Support</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Jetzt starten</a>
+                            </div>
+                            <div class="card-footer text-muted">Alles, um durchzustarten!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card box-shadow mb-2">
+                            <div class="card-header bg-dark text-white">
+                                <h4 class="my-0">Premium</h4>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">19,99&euro; <small class="text-muted">/ Monat</small></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Alle Filter &amp; Farben</li>
+                                    <li>Unbegrenzter Cloud-Speicher</li>
+                                    <li>10 Social Media Account </li>
+                                    <li>Telefon &amp; E-Mail Support</li>
+                                </ul>
+                                <a href="#" class="btn btn-dark">Angebot erhalten</a>
+                            </div>
+                            <div class="card-footer text-muted">Volle Power für echte Profis!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ende Container -->
+        </div>
+        <!-- Ende Pricing -->
+        
+        <!-- Testimonials -->
+        <div class="bg-light" id="testimonials">
+            <!-- Content Container -->
+            <div class="container text-center py-5">
+                <h3 class="display-4 mb-5">Unsere Nutzer sagen</h3>
+                <div class="carousel carousel-dark slide" id="carouselTestimonials" data-bs-ride="carousel"> <!-- in the original solution we get the "svg images" from a url link to make the arrows -->
+                    <div class="carousel-inner my-3">
+                        <div class="carousel-item active">
+                            <div class="testimonial text-center">
+                                <img src="startup-images/testimonial-1.jpeg" class="img-fluid rounded-circle img-testimonial mb-3">
+                                <p class="lead"><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> <!-- the class "lead" makes the text a bi bigger and with less weight -->
+                                <h4>John Doe</h4>
+                                <h6 class="my-3">Selbständiger Photograph</h6>
+
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star-half text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial text-center">
+                                <img src="startup-images/testimonial-2.jpeg" class="img-fluid rounded-circle img-testimonial mb-3">
+                                <p class="lead"><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                                <h4>Anna Garcia</h4>
+                                <h6 class="my-3">Gründerin PrettyPictures.com</h6>
+
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial text-center">
+                                <img src="startup-images/testimonial-3.jpeg" class="img-fluid rounded-circle img-testimonial mb-3">
+                                <p class="lead"><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p> <!-- the class "lead" makes the text a bi bigger and with less weight -->
+                                <h4>Maria Kate</h4>
+                                <h6 class="my-3">Hobby Designerin</h6>
+
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star-half text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Vorheriges</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Nächstes</span>
+                    </button><!-- we can also use links with role="button" and as a href="#carouselTestimonials" -->
+                </div>
+            </div>
+            <!-- Ende Container -->
+        </div>
+        <!-- Ende Testimonials -->
+        
+        <!-- Contacts -->
+        <div id="contact">
+            <!-- Content Container -->
+            <div class="container py-5">
+                <h3 class="display-4 mb-5">Kontaktiere uns</h3>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>Fülle einfach dieses kurze Formular aus und wir melden uns in Lichtsgeschwindigkeit bei Dir!</p>
+                        <form class="mb-3">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Vorname</label>
+                                    <input type="text" class="form-control" id="inputVorname" placeholder="Vorname">
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Nachname</label>
+                                    <input type="text" class="form-control" id="inputNachname" placeholder="Nachname">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputAddress" class="form-label">Email Addresse <span class="text-muted">*</span></label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Email Addresse">
+                                <small class="text-muted">Wir teilen deine Email Addresse niemals, mit niemandem!</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputNachricht" class="form-label">Nachricht <span class="text-muted">*</span></label>
+                                <textarea class="form-control" id="inputNachricht" rows="5" placeholder="Deine Nachricht an uns..."></textarea>
+                                <small class="text-muted">* Pflichtfelder</small>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">Absenden</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Komme in Kontakt</h3>
+                        <p>Für Support oder weitere Fragen:<br>
+                        Schreibe uns eine Email an <a href="mailto:">mail@photastic.com</a></p>
+                        <h3>Standorte</h3>
+                        <address>
+                            <b>Photastic Gmbh</b>
+                            Hauptstraße 38 <br>
+                            87654 Stadt <br>
+                            Deutschland <br>
+                        </address>
+                        <address>
+                            <b>Photastic Inc.</b>
+                            795 E Dragram<br>
+                            Seattle WA 98102<br>
+                            USA <br>
+                        </address>
+                    </div>
+                </div> 
+            </div>
+            <!-- Ende Container -->
+        </div>
+        <!-- Ende Contact -->
+        
+        <!-- Footer -->
+        <div class="footer bg-dark text-white" id="footer">
+            <div class="container pt-5 pb-4">
+                <div class="row my-4">
+                    <div class="col-md-3 col-sm-6">
+                        <h4 class="mb-3">Navigation</h4>
+                        <ul class="list-unstyled"> <!-- the flex column nav works similar -->
+                            <li><a href="#features" class="text-white">Features</a></li>
+                            <li><a href="#pricing" class="text-white">Preise</a></li>
+                            <li><a href="#testimonials" class="text-white">Kundenstimmen</a></li>
+                            <li><a href="#contact" class="text-white">Kontakt</a></li>
+                        </ul> 
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4 class="mb-3">Über uns</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4 class="mb-3">Kontakt</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fa-solid fa-envelope"></i> mail@photastic.com</li>
+                            <li><i class="fa-solid fa-phone"></i> +49 7543 123456</li>
+                            <li><i class="fa-solid fa-location-dot me-1"></i> Hauptstraße 38</li>
+                        </ul> 
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4 class="mb-3">Rechtliche Hinweise</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Impressum</a></li>
+                            <li><a href="#" class="text-white">Datenschutz</a></li>
+                            <li><a href="#" class="text-white">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ende Footer -->
+        
+        
+        
+        
+        
+        <!-- Start Container -->
+        
+
+        
+        
+        
+        <!--- Ende Container -->
+        
+        
+        <!--Start Modal -->
+        
+        
+        
+        <!-- IMPORTANT: apparently there is a clash between different JS components -->
+        
+        <!-- Optionalen JavaScript -->
+        <!-- JS first, PoP second, BS-JS third -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> 
+        
+        
+        <!-- Popover aktivieren -->
+        <script>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        </script>
+        
+        <!-- Popover Dismiss -->
+        <script>
+            const popover = new bootstrap.Popover('.popover-dismiss', {trigger: 'focus'})
+        </script>
+        
+        <!-- Tooltip aktivieren -->
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+    </body>
+</html>
