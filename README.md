@@ -1,2 +1,3 @@
-# This repo consists of my first front-end project with BS5
-You can download the files in a single folder, click on the HTML one and see the result!
+# This repo is my Portfolio with BS5!
+Each folder contains a project made with Bootstrap5. 
+You can download a folder, click the HTML one and see the results :)
